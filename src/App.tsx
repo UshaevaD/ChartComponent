@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import s from './app.module.css';
+import UnionDonutChart from './components/UnionDonutChart/UnionDonutChart';
 
-function App() {
+const App = () => {
+  const nit = { title: "Нит", current: 234840, max: 246051 }
+  const prognosis = { title: "Прогноз", current: 272289, max: 283500 }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={s.app}>
+      <UnionDonutChart 
+        nit={nit}
+        prognosis={prognosis}
+      />
     </div>
   );
 }

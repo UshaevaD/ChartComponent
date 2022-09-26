@@ -1,0 +1,39 @@
+.container {
+    position: relative;
+}
+.diagramContainer {
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 45px;
+}
+.unionDiagram {
+    position: absolute;
+}
+.diagramCenter {
+    position: absolute;
+    top: 0;
+}
+.labelCenter {
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    font-weight: 900;
+
+    top: 50%;
+    left: calc(50% - 20px);
+    transform: translate(-50%, -50%);
+}
+.labelRight {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 900;
+    z-index: 1;
+
+    top: 50%;
+    transform: translateY(-100%);
+    right: 10px;
+}
+.info {
+    padding-top: 90px;
+    padding-left: 95px;
+}

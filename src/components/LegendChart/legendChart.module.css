@@ -1,0 +1,13 @@
+.title {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.valueContainer {
+    font-size: 22px;
+    font-weight: 900;
+    white-space: nowrap;
+    margin-bottom: 5px;
+}
+.maxValue {
+    color: #A4A4A4;
+}
